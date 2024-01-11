@@ -99,8 +99,10 @@ services:
             - ./logs/memcached:/var/log/memcached
             - db:/var/lib/mysql
             - cache:/var/lib/memcached
-            - ${SITE_PATH}:/var/www/bitrix
+            - ${SITE_PATH}:/var/www/localhost/htdocs/
             - /etc/localtime:/etc/localtime/:ro
+        tty: true
+        stdin_open: true
         networks:
             - bitrixdock
 
