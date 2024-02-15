@@ -91,7 +91,7 @@ services:
 
     source:
         image: alpine:latest
-        container_name: ${PROJECT_NAME}-source
+        container_name: source
         volumes:
             - ./logs/${WEB_SERVER_TYPE}:/var/log/${WEB_SERVER_TYPE}
             - ./logs/php:/var/log/php
